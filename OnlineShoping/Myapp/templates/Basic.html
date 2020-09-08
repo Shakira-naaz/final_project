@@ -1,0 +1,213 @@
+<!doctype html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="zxx">
+{% load static %}
+<!--<![endif]-->
+
+
+<!-- Mirrored from demo.hasthemes.com/bstore-preview/bstore/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 13 Jun 2020 19:38:55 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Fashion-store</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon
+		============================================ -->
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.png' %}">
+
+	<!-- FONTS
+		============================================ -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic&amp;subset=latin,latin-ext'
+		rel='stylesheet' type='text/css'>
+
+	<!-- animate CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+	<!-- FANCYBOX CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}">
+
+	<!-- BXSLIDER CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/jquery.bxslider.css' %}">
+
+	<!-- MEANMENU CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %}">
+
+	<!-- JQUERY-UI-SLIDER CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/jquery-ui-slider.css' %}">
+
+	<!-- NIVO SLIDER CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/nivo-slider.css' %}">
+
+	<!-- OWL CAROUSEL CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+
+	<!-- OWL CAROUSEL THEME CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+
+	<!-- BOOTSTRAP CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+	<!-- FONT AWESOME CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+	<!-- NORMALIZE CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+
+	<!-- MAIN CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+	<!-- STYLE CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+
+	<!-- RESPONSIVE CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+	<!-- IE CSS
+		============================================ -->
+	<link rel="stylesheet" href="{% static 'css/ie.css' %}">
+
+	<!-- MODERNIZR JS
+		============================================ -->
+	<script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+</head>
+
+<body class="index-2">
+	<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+	<!-- Add your site or application content here -->
+
+	<!-- HEADER-TOP START -->
+	<div class="header-top">
+		<div class="container">
+				<!-- HEADER-RIGHT-MENU END -->
+			</div>
+		</div>
+	<!-- HEADER-TOP END -->
+	<!-- HEADER-MIDDLE START -->
+	<section class="header-middle">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- LOGO START -->
+					<div class="logo">
+						<a href="index.html"><img src="{% static 'img/bag2.png' %}" alt="bstore logo" height="60px" width="120px" style="color: red" /><br><h4 style="padding-left: 20px">E-Shoping</h4></a>
+					</div>
+					<!-- LOGO END -->
+					<!-- HEADER-RIGHT-CALLUS START -->
+					<div class="header-right-callus">
+						<h3>call us free</h3>
+						<span>8827307278</span>
+					</div>
+					<!-- HEADER-RIGHT-CALLUS END -->
+					<!-- CATEGORYS-PRODUCT-SEARCH START -->
+					<div class="categorys-product-search">
+						<form action="#" method="get" class="search-form-cat">
+							<div class="search-product form-group">
+								<input type="text" class="form-control search-form" name="s"
+									placeholder="Enter your search key ... " />
+								<button class="search-button" value="Search" name="s" type="submit">
+									<i class="fa fa-search"></i>
+								</button>
+							</div>
+						</form>
+					</div>
+					<!-- CATEGORYS-PRODUCT-SEARCH END -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- HEADER-MIDDLE END -->
+	<!-- MAIN-MENU-AREA START -->
+	<header class="main-menu-area">
+		<div class="container">
+			<div class="row">
+				<!-- SHOPPING-CART START -->
+				<div class="col-lg-3 col-12 order-lg-2 shopingcartarea">
+					<div class="shopping-cart-out" >
+						<div class="shopping-cart" >
+							<a class="shop-link" href="{% url 'checkout' %}" title="View my shopping cart">
+								<i class="fa fa-shopping-cart cart-icon"></i>
+								<b>My Cart</b>
+								<span class="ajax-cart-quantity" id="cart" >0</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- SHOPPING-CART END -->
+				<!-- MAINMENU START -->
+				<div class="col-lg-9 col-12 order-lg-1 no-padding-right menuarea">
+					<div class="mainmenu">
+						<nav>
+							<ul class="list-inline mega-menu">
+								<li class="list-inline-item active position-relative"><a href="{%  url 'homepage' %}">Home</a>
+								</li>
+								<li class="list-inline-item position-static">
+									<a href="{% url 'single' "Women" %}">Women</a>
+								</li>
+								<li class="list-inline-item position-relative">
+									<a href="{% url 'single' "Mens" %}">Men</a>
+								</li>
+								<li class="list-inline-item position-static">
+									<a href="{% url 'single' "Kids" %}">kids</a>
+								</li>
+								<li class="list-inline-item"><a href="{% url 'homepage' %}">About us</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- MAINMENU END -->
+			</div>
+			<div class="row">
+				<!-- MOBILE MENU START -->
+				<div class="col-sm-12 mobile-menu-area d-block d-md-none">
+					<div class="mobile-menu" id="mob-menu">
+						<span class="mobile-menu-title">MENU</span>
+						<nav>
+							<ul>
+								<li><a href="{% url 'homepage' %}">Home</a>
+								</li>
+								<li><a href="{% url 'single' "Women" %}">Women</a>
+								</li>
+								<li><a href="{% url 'single' "Mens" %}">men</a>
+								</li>
+								<li><a href="{% url 'single' "Kids" %}">Kids</a></li>
+								<li><a href="{% url 'homepage' %}">About us</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- MOBILE MENU END -->
+			</div>
+		</div>
+	</header>
+	<!-- MAIN-MENU-AREA END -->
+
+{% block body %}
+
+{% endblock %}
+</body>

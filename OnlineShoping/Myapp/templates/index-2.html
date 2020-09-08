@@ -1,0 +1,460 @@
+{% extends 'Basic.html' %}
+{% block body %}
+    {% load static %}
+    	<!-- HEADER-BOTTOM-AREA START -->
+	<section class="header-bottom-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-12">
+					<!-- LEFT-CATEGORY-MENU START -->
+					<div class="left-category-menu">
+						<div class="left-product-cat">
+							<div class="category-heading">
+								<h2>category</h2>
+							</div>
+							<!-- CATEGORY-MENU-LIST START -->
+							<div class="category-menu-list">
+								<ul>
+									<li><a href="{% url 'single' "Women" %}"><span
+												class="cat-thumb hidden-md hidden-sm hidden-xs"><img
+													src="{% static 'img/layout2/1.png' %}" alt="" /></span>Women<i
+												></i></a>
+									</li>
+									<li><a href="{% url 'single' "Mens" %}"><span
+												class="cat-thumb hidden-md hidden-sm hidden-xs"><img
+													src="{% static 'img/layout2/2.png' %}" alt="" /></span>men<i
+												></i></a>
+									</li>
+									<li><a href="{% url 'single' "Mens" %}"><span
+												class="cat-thumb hidden-md hidden-sm hidden-xs"><img
+													src="{% static 'img/layout2/3.png' %}" alt="" /></span>Accessories<i
+												></i></a>
+									</li>
+									<li><a href="{% url 'single' "Mens" %}"><span
+												class="cat-thumb hidden-md hidden-sm hidden-xs"><img
+													src="{% static 'img/layout2/4.png' %}" alt="" /></span>Blouse<i
+												></i></a>
+										<!-- CAT-LEFT MEGA MENU START -->
+										<!-- CAT-LEFT MEGA MENU END -->
+									</li>
+									<li><a href="{% url 'single' "Mens" %}"><span
+												class="cat-thumb hidden-md hidden-sm hidden-xs"><img
+													src="{% static 'img/layout2/6.png' %}" alt="" /></span>dresses<i
+												></i></a>
+									</li>
+									<li><a href="{% url 'single' "Mens" %}"><span
+												class="cat-thumb hidden-md hidden-sm hidden-xs"><img
+													src="{% static 'img/layout2/4.png' %}" alt="" /></span>Clothing</a>
+									</li>
+									<li><a href="{% url 'single' "Kids" %}"><span
+												class="cat-thumb hidden-md hidden-sm hidden-xs"><img
+													src="{% static 'img/layout2/7.png' %}" alt="" /></span>kids</a>
+									</li>
+                                    <li><a href="{% url 'single' "Mens" %}"><span class="cat-thumb hidden-md hidden-sm hidden-xs"><img
+                                            src="{% static 'img/layout2/6.png' %}" alt="" /></span>Trending</a>
+									</li>
+								</ul>
+							</div>
+							<!-- CATEGORY-MENU-LIST END -->
+						</div>
+					</div>
+					<!-- LEFT-CATEGORY-MENU END -->
+				</div>
+				<div class="col-md-9 col-12">
+					<!-- MAIN-SLIDER-AREA START -->
+					<div class="main-slider-area">
+						<div class="slider-area">
+							<div id="wrapper">
+								<div class="slider-wrapper">
+									<div id="mainSlider" class="nivoSlider">
+										<img src="{% static 'img/slider/homepage2/3.jpg' %}" alt="main slider" title="#htmlcaption" />
+										<img src="{% static 'img/slider/homepage2/4.jpg' %}" alt="main slider" title="#htmlcaption2" />
+									</div>
+									<div id="htmlcaption" class="nivo-html-caption slider-caption">
+										<div class="slider-progress"></div>
+										<div class="slider-cap-text slider-text1">
+											<div class="d-table-cell">
+												<h2 class="animated bounceInDown">BEST STORE IN BHOPAL</h2>
+												<p class="animated bounceInUp">Latest Fashion Accesories& clothes available at Affordable and Good quality range.</p>
+											</div>
+										</div>
+									</div>
+									<div id="htmlcaption2" class="nivo-html-caption">
+										<div class="slider-progress"></div>
+										<div class="slider-cap-text slider-text2">
+											<div class="d-table-cell">
+												<h2 class="animated bounceInDown">Search For Latest& Brand New Product.</h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- MAIN-SLIDER-AREA END -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- HEADER-BOTTOM-AREA END -->
+	<!-- MAIN-CONTENT-SECTION START -->
+	<section class="main-content-section">
+		<div class="container">
+			<div class="row">
+				<!-- LEFT-SIDEBAR START -->
+				<div class="col-md-3 col-12">
+					<!-- SIDEBAR-LEFT-ADD START -->
+					<div class="single-left-sidebar sidebar-left-add">
+						<div class="sidebar-left zoom-img">
+							<a href="#"><img src="{% static 'img/covid19.jpg' %}" alt="sidebar left" /></a>
+						</div>
+					</div>
+
+				</div>
+				<!-- LEFT-SIDEBAR END -->
+				<div class="col-md-9 col-12">
+					<div class="row">
+						<div class="col-12">
+							<div class="new-product-area">
+								<div class="left-title-area">
+									<h2 class="left-title">New Products</h2>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<div class="carousel-wrap">
+											<!-- HOME2-NEW-PRO-CAROUSEL START -->
+											<div class="home2-new-pro-carousel">
+												<!-- NEW-PRODUCT SINGLE ITEM START -->
+                                                {% for i in product %}
+												<div class="item">
+													<div class="new-product">
+														<div class="single-product-item">
+															<div class="product-image">
+																<a href="#"><img src="/media/{{ i.image }}"
+																		alt="product-image" height="250px" /></a>
+																<a href="#" class="new-mark-box">new</a>
+																<div class="overlay-content">
+																</div>
+															</div>
+															<div class="product-info">
+                                                                <div class="customar-comments-box">
+															<div class="rating-box">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star-half-empty"></i>
+																<i class="fa fa-star-half-empty"></i>
+															</div>
+														</div>
+																<a href="single-product.html" id="namepr{{ i.id }}">{{ i.product_name }}</a>
+																<div class="price-box">
+																	<span class="price" id="pricepr{{ i.id }}">{{ i.price }}</span>
+																</div>
+                                                                   <div class="divpr" id="divpr{{ i.id }}" style="width: 100%"  >
+                                                                <button type="button" id="pr{{ i.id }}" class="btn  cart" style="background-color: #f1f92a">Add to cart</button>
+                                                                    </div>
+
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+                                                {% endfor %}
+												<!-- NEW-PRODUCT SINGLE ITEM END -->
+											</div>
+											<!-- HOME2-NEW-PRO-CAROUSEL END -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<!-- SALE-PODUCT-AREA START -->
+							<div class="sale-poduct-area new-product-area">
+								<div class="left-title-area">
+									<h2 class="left-title">Sale Products</h2>
+								</div>
+								<div class="carousel-wrap">
+									<!-- HOME2-SALE-CAROUSEL START -->
+									<div class="home2-sale-carousel">
+										<!-- NEW-PRODUCT SINGLE ITEM START -->
+                                        {% for i in women %}
+										<div class="item">
+											<div class="new-product">
+												<div class="single-product-item">
+													<div class="product-image">
+														<a href="#"><img src="/media/{{ i.image }}"
+																alt="product-image" height="200px" /></a>
+														<a href="#" class="new-mark-box">50% OFF</a>
+														<div class="overlay-content">
+															<ul>
+																<li><a href="#" title="Quick view"><i
+																			class="fa fa-search"></i></a></li>
+																<li><a href="#" title="Quick view"><i
+																			class="fa fa-shopping-cart"></i></a></li>
+																<li><a href="#" title="Quick view"><i
+																			class="fa fa-retweet"></i></a></li>
+																<li><a href="#" title="Quick view"><i
+																			class="fa fa-heart-o"></i></a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="product-info">
+														<div class="customar-comments-box">
+															<div class="rating-box">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star-half-empty"></i>
+																<i class="fa fa-star-half-empty"></i>
+															</div>
+														</div>
+														<a href="{% url 'checkout' %}" id="namepr{{ i.id }}">{{ i.product_name }}</a>
+														<div class="price-box">
+															<span class="price" id="pricepr{{ i.id }}">{{ i.price }}</span>
+                                                             <div class="divpr" id="divpr{{ i.id }}" style="width: 100%"  >
+                                                                <button type="button" id="pr{{ i.id }}" class="btn  cart" style="background-color: #f1f92a">Add to cart</button>
+                                                                    </div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+                                        {% endfor %}
+										<!-- NEW-PRODUCT SINGLE ITEM END -->
+									</div>
+									<!-- HOME2-SALE-CAROUSEL END -->
+								</div>
+							</div>
+							<!-- SALE-PODUCT-AREA end -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- MAIN-CONTENT-SECTION END -->
+	<!-- MAIN-CONTENT-SECTION START -->
+	<section class="main-content-section-full-column">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- IMAGE-ADD-AREA START -->
+					<div class="row image-add-area">
+						<div class="col-md-7 col-12">
+							<!-- SINGLE ADD START -->
+							<div class="onehalf-add-shope zoom-img">
+								<a href="#"><img src="{% static 'img/banner.jpg' %}" alt="shope-add" height="300px"/></a>
+							</div>
+							<!-- SINGLE ADD END -->
+						</div>
+						<div class="col-md-5 col-12">
+							<!-- SINGLE ADD START -->
+							<div class="onehalf-add-shope zoom-img">
+								<a href="#"><img src="{% static 'img/banner2.jpg' %}" alt="shope-add" height="300px" /></a>
+							</div>
+							<!-- SINGLE ADD END -->
+						</div>
+					</div>
+					<!-- IMAGE-ADD-AREA END -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- MAIN-CONTENT-SECTION END -->
+	<!-- COMPANY-FACALITY START -->
+	<section class="company-facality">
+		<div class="container">
+			<div class="row company-facality-row">
+				<!-- SINGLE-FACALITY START -->
+				<div class="col-xl-3 col-sm-6 col-12">
+					<div class="single-facality">
+						<div class="facality-icon">
+							<i class="fa fa-rocket"></i>
+						</div>
+						<div class="facality-text">
+							<h3 class="facality-heading-text">FREE SHIPPING</h3>
+							<span>on order over &#8377;100</span>
+						</div>
+					</div>
+				</div>
+				<!-- SINGLE-FACALITY END -->
+				<!-- SINGLE-FACALITY START -->
+				<div class="col-xl-3 col-sm-6 col-12">
+					<div class="single-facality">
+						<div class="facality-icon">
+							<i class="fa fa-umbrella"></i>
+						</div>
+						<div class="facality-text">
+							<h3 class="facality-heading-text">24/7 SUPPORT</h3>
+							<span>online consultations</span>
+						</div>
+					</div>
+				</div>
+				<!-- SINGLE-FACALITY END -->
+				<!-- SINGLE-FACALITY START -->
+				<div class="col-xl-3 col-sm-6 col-12">
+					<div class="single-facality">
+						<div class="facality-icon">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="facality-text">
+							<h3 class="facality-heading-text">DAILY UPDATES</h3>
+							<span>Check out store for latest</span>
+						</div>
+					</div>
+				</div>
+				<!-- SINGLE-FACALITY END -->
+				<!-- SINGLE-FACALITY START -->
+				<div class="col-xl-3 col-sm-6 col-12">
+					<div class="single-facality">
+						<div class="facality-icon">
+							<i class="fa fa-refresh"></i>
+						</div>
+						<div class="facality-text">
+							<h3 class="facality-heading-text">30-DAY RETURNS</h3>
+							<span>moneyback guarantee</span>
+						</div>
+					</div>
+				</div>
+				<!-- SINGLE-FACALITY END -->
+			</div>
+		</div>
+	</section>
+	<!-- COMPANY-FACALITY END -->
+	<!-- COPYRIGHT-AREA START -->
+	<footer class="copyright-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="copy-right">
+						<address>Copyright © 2020 <a >Shakira&Urusha</a> All Rights Reserved
+						</address>
+					</div>
+					<div class="scroll-to-top">
+						<a href="#" class="bstore-scrollertop"><i class="fa fa-angle-double-up"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- COPYRIGHT-AREA END -->
+
+            	<!-- JS
+		===============================================-->
+	<!-- jquery js -->
+	<script src="{% static 'js/vendor/jquery-1.11.3.min.js' %}"></script>
+
+	<!-- fancybox js -->
+	<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+
+	<!-- bxslider js -->
+	<script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+
+	<!-- meanmenu js -->
+	<script src="{% static 'js/jquery.meanmenu.js' %}"></script>
+
+	<!-- owl carousel js -->
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+	<!-- nivo slider js -->
+	<script src="{% static 'js/jquery.nivo.slider.js' %}"></script>
+
+	<!-- jqueryui js -->
+	<script src="{% static 'js/jqueryui.js' %}"></script>
+
+	<!-- bootstrap js -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+	<!-- wow js -->
+	<script src="{% static 'js/wow.js' %}"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+	<!-- Google Map js -->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+			var mapOptions = {
+				zoom: 8,
+				scrollwheel: false,
+				center: new google.maps.LatLng(35.149868, -90.046678)
+			};
+			var map = new google.maps.Map(document.getElementById('googleMap'),
+				mapOptions);
+			var marker = new google.maps.Marker({
+				position: map.getCenter(),
+				map: map
+			});
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+	<!-- main js -->
+	<script src="{% static 'js/main.js' %}"></script>
+<script>
+if (localStorage.getItem('cart') == null) {
+    var cart = {};
+} else {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    updateCart(cart);
+}
+$('.divpr').on('click', 'button.cart', function () {
+    var idstr = this.id.toString();
+    console.log(idstr)
+    mn =this.id.slice(2, );
+    if (cart[idstr] != undefined) {
+        cart[idstr][0] = cart[idstr][0] + 1;
+    } else {
+        cart[idstr] = 1;
+        nam = document.getElementById('name' + idstr).innerHTML;
+        price = document.getElementById('price' + idstr).innerHTML;
+        cart[idstr] = [cart[idstr], nam, price];
+    }
+    updateCart(cart);
+
+});
+
+function updateCart(cart) {
+    var sum = 0;
+    for (var item in cart) {
+        sum = sum + cart[item][0];
+        document.getElementById('div' + item).innerHTML = "<button id='minus" + item + "' class='btn  minus' style='background-color: #f1f92a; font-size: 10px' >-</button> <a id='val" + item + "''>" + cart[item][0] + "</span> <button id='plus" + item + "' class='btn  plus' style='background-color: #f1f92a; font-size: 10px'> + </button> <a style='color: #0b0b0b'></a>" +
+            " &nbsp;<a href = '{% url 'checkout' %}'><button class='cart btn' id='Checkout' style=\"background-color: #f1f92a\">Checkout</button>";
+            }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    document.getElementById('cart').innerHTML = sum;
+    console.log(cart);
+}
+
+$('.divpr').on("click", "button.minus", function() {
+    a = this.id.slice(7, );
+    console.log(a)
+    cart['pr' + a][0] = cart['pr' + a][0] - 1;
+    console.log(cart['pr' + a][0])
+    cart['pr' + a][0] = Math.max(0, cart['pr' + a][0]);
+    document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
+    if(cart['pr' + a][0]==0){
+        document.getElementById('divpr' + a).innerHTML = "<div class=' divpr' id='divpr" + a + "' ><button type='button' id='pr" + a + "' class='btn cart' style=\"background-color: #f1f92a\">Add to cart</button>"
+        delete cart['pr' + a];
+    }
+    else {
+        document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
+    }
+    updateCart(cart);
+});
+$('.divpr').on("click", "button.plus", function() {
+    a = this.id.slice(6, );
+    cart['pr' + a][0] = cart['pr' + a][0] + 1;
+    document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
+    updateCart(cart);
+});
+</script>
+    {% endblock %}
